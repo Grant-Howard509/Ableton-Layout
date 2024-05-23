@@ -1,0 +1,7 @@
+:root {
+    --font-family: futura-pt, Avenir, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --body-background-color: rgb(243, 243, 243);
+    --main-background-color: rgb(255, 255, 255);
+    --blue-link-color: rgb(0, 0, 255);
+    --orange-link-color: rgb(255, 118, 77);
+}
