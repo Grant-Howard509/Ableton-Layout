@@ -5,3 +5,88 @@
     --blue-link-color: rgb(0, 0, 255);
     --orange-link-color: rgb(255, 118, 77);
 }
+
+body {
+    background: var(--main-background-color);
+    font-family: var(--font-family);
+}
+
+header {
+    padding-top: 5px;
+}
+
+nav {
+    border-bottom: solid #eee 2px;
+    cursor: default;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1.375rem 1rem 1.375rem;
+}
+
+button {
+    display: none;
+    background: transparent;
+    font-weight: 500;
+    font-size: 1.15rem;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 1.75rem;
+}
+
+button::after {
+    content: '';
+    transform: scale(0.8);
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-bottom: -3px;
+    /* margin-left: .4em; */
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #000;
+}
+
+.primary-list {
+    display: inline-block;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+li > a {
+    margin: 0;
+    padding: 0 8px 0 8px;
+    color: #000;
+    text-decoration: none;
+}
+
+.item1 > a {
+    padding: 0 8px 0 0;
+}
+
+.item9 {
+    margin-left: auto;
+}
+
+
+@media (max-width: 1024px) {
+    .primary-list {
+        display: none;
+    }
+
+    button {
+        display: inline-block;
+    }
+}
