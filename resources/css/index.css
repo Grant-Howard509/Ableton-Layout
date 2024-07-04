@@ -11,8 +11,14 @@
 }
 
 body {
-    background: var(--main-background-color);
+    background: var(--body-background-color);
     font-family: var(--font-family);
+}
+
+main {
+    max-width: 100rem;
+    margin: 0 auto;
+    background: var(--main-background-color); 
 }
 
 header {
@@ -28,7 +34,7 @@ nav {
     position: absolute;
     display: inline-block;
     vertical-align: middle;
-    top: .1rem;
+    top: 1.25rem;
     margin: 0 2rem 1.25rem 2rem;
     z-index: 30;
 }
@@ -59,6 +65,7 @@ button::after {
 
 .primary-list {
    width: 100%;
+   margin-bottom: 2rem;
 }
 
 ul {
@@ -67,6 +74,7 @@ ul {
     /* justify-content: center; */
     padding-left: 8.75rem;
     margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 li {
@@ -85,8 +93,16 @@ li > a {
     padding: 0 8px 0 0;
 }
 
+.item8 > a {
+    color: var(--orange-link-color);
+}
+
 .item9 {
     margin-left: auto;
+}
+
+.item9 > a {
+    color: var(--blue-link-color);
 }
 
 
@@ -101,5 +117,10 @@ li > a {
 
     .ableton-logo {
         position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        top: 0;
+        margin: 0 2rem 1.15rem 2rem;
+        z-index: 30;
     }
 }
