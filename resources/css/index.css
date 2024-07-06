@@ -2,12 +2,15 @@
     --font-family: futura-pt, Avenir, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --body-background-color: rgb(243, 243, 243);
     --main-background-color: rgb(255, 255, 255);
+    --main-background-color-opacity: rgb(255, 255, 255, 0.9);
     --blue-link-color: rgb(0, 0, 255);
     --orange-link-color: rgb(255, 118, 77);
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -26,9 +29,12 @@ header {
 }
 
 nav {
-    border-bottom: solid #eee 2px;
     cursor: default;
     font-weight: 600;
+}
+
+li {
+    list-style: none;
 }
 
 .ableton-logo {
@@ -40,7 +46,7 @@ nav {
     z-index: 30;
 }
 
-button {
+.menu-button {
     display: none;
     background: transparent;
     font-weight: 500;
@@ -50,7 +56,7 @@ button {
     margin-bottom: 1rem;
 }
 
-button::after {
+.menu-button::after {
     content: '';
     transform: scale(0.8);
     display: inline-block;
@@ -61,6 +67,10 @@ button::after {
     border-style: solid;
     border-color: transparent;
     border-top-color: #000;
+}
+
+.primary {
+    border-bottom: solid #eee 2px;
 }
 
 .primary-list {
@@ -77,12 +87,7 @@ button::after {
     margin-top: 1.5rem;
 }
 
-li {
-    list-style: none;
-}
-
 .primary-ul a {
-    margin: 0;
     text-decoration: none;
     color: #000;
 }
@@ -111,20 +116,14 @@ li {
    display: flex;
    align-items: center;
    font-size: .85rem;
-   padding: 25px 25px;
-   margin: 0;
-   background-color: rgba(255, 255, 255, 0.9);
+   padding: 1.5625rem 1.5625rem;
+   background-color: var(--main-background-color-opacity);
 }
 
 .secondary-ul a {
-    margin: 0;
     padding: 0 1.25rem 0 1.25rem;
     color: #000;
     text-decoration: none;
-}
-
-.secondary-ul a {
-    margin: 0;
 }
 
 .about-link a {
@@ -136,7 +135,7 @@ li {
         display: none;
     }
 
-    button {
+    .menu-button {
         display: inline-block;
         font-size: 1rem;
     }
@@ -152,7 +151,7 @@ li {
     }
 
     .secondary-ul {
-        padding: 25px 10px;
+        padding: 1.5625rem 0.625rem;
         font-size: .75rem;
     }
 
