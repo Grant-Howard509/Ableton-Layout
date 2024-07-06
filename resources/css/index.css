@@ -36,7 +36,7 @@ nav {
     display: inline-block;
     vertical-align: middle;
     top: 1.25rem;
-    margin: 0 2rem 1.25rem 2rem;
+    margin: 0 2rem 1rem 2rem;
     z-index: 30;
 }
 
@@ -47,7 +47,7 @@ button {
     font-size: 1.15rem;
     cursor: pointer;
     border: none;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1rem;
 }
 
 button::after {
@@ -57,7 +57,6 @@ button::after {
     width: 0;
     height: 0;
     margin-bottom: -3px;
-    /* margin-left: .4em; */
     border-width: 5px;
     border-style: solid;
     border-color: transparent;
@@ -66,13 +65,12 @@ button::after {
 
 .primary-list {
    width: 100%;
-   margin-bottom: 2rem;
+   margin-bottom: 1rem;
 }
 
 .primary-ul {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     font-size: 1rem;
     padding-left: 8.75rem;
     margin-bottom: 1.5rem;
@@ -81,29 +79,31 @@ button::after {
 
 li {
     list-style: none;
-    /* overflow: hidden; */
 }
 
 .primary-ul a {
     margin: 0;
-    padding: 0 1rem 0 1rem;
-    color: #000;
     text-decoration: none;
+    color: #000;
 }
 
-.item1 > a {
+.primary-ul li {
+    padding: 0 1rem 0 1rem;
+}
+
+.primary-ul .item1 {
     padding: 0 8px 0 0;
 }
 
-.item8 > a {
+.item8 a {
     color: var(--orange-link-color);
 }
 
-.item9 {
+.primary-ul .item9 {
     margin-left: auto;
 }
 
-.item9 > a {
+.item9 a {
     color: var(--blue-link-color);
 }
 
@@ -113,6 +113,7 @@ li {
    font-size: .85rem;
    padding: 25px 25px;
    margin: 0;
+   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .secondary-ul a {
@@ -140,17 +141,13 @@ li {
         font-size: 1rem;
     }
 
-    header {
-        padding-top: .5rem;
-    }
-
-
     .ableton-logo {
         position: relative;
         display: inline-block;
         vertical-align: middle;
         top: 0;
-        margin: 0 1.5rem 1rem 1.5rem;
+        left: .5rem;
+        margin: 0 1.5rem .8rem 1.5rem;
         z-index: 30;
     }
 
