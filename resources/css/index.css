@@ -112,6 +112,39 @@ li {
     color: var(--blue-link-color);
 }
 
+.primary-list-extension {
+    display: none;
+}
+
+.primary-list-extension h3 {
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.extension-ul {
+    display: inline-block;
+}
+
+.extension-ul li {
+    margin-bottom: 1rem;
+}
+
+.extension-ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: .75rem;
+}
+
+.extension-ul li:nth-child(5) a {
+    color: var(--orange-link-color);
+}
+
+.extension-2 {
+    margin-top: 1rem;
+}
+
+/* Do extension 2 here */
+
 .secondary-ul {
    display: flex;
    align-items: center;
@@ -132,6 +165,40 @@ li {
 
 @media (max-width: 1024px) {
     .primary-list {
+        position: absolute;
+        padding: 70px 30px 0 30px;
+        margin: 0;
+        top: 0;
+        background-color: var(--blue-link-color);
+        /* transform: translateY(-100%); */
+        transition: transform 0.35s ease-in-out;
+        z-index: 20;
+    }
+
+    .primary-list-extension {
+        display: block;
+    }
+
+    .primary-ul {
+        display: inline-block;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .primary-ul li {
+        padding: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .primary-ul a {
+        color: #fff;
+    }
+
+    .primary-ul .item1 {
+        padding: 0;
+    }
+
+    .item8 {
         display: none;
     }
 
