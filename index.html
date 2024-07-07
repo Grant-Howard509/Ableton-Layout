@@ -8,33 +8,107 @@
     <title>Ableton</title>
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <a href="#" class="ableton-logo">
-                <!-- <img src="./resources/css/data/abletonlive-logo.svg" alt="Ableton-Logo"> -->
-                <svg fill="#000000" width="60" height="60" viewBox="0 0 24 19" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M0 6.4v11.2h1.6V6.4zm3.2 0v11.2h1.6V6.4zm3.2 0v11.2H8V6.4zm3.2 0v11.2h1.6V6.4zm3.2 0V8H24V6.4zm0 3.2v1.6H24V9.6zm0 3.2v1.6H24v-1.6zm0 3.2v1.6H24V16z"/></svg>
-            </a>
+    <main>
+        <header>
+            <nav class="primary">
+                <a href="#" class="ableton-logo">
+                    <!-- <img src="./resources/css/data/abletonlive-logo.svg" alt="Ableton-Logo"> -->
+                    <svg class="logo" width="60" height="50" viewBox="0 0 24 19" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M0 6.4v11.2h1.6V6.4zm3.2 0v11.2h1.6V6.4zm3.2 0v11.2H8V6.4zm3.2 0v11.2h1.6V6.4zm3.2 0V8H24V6.4zm0 3.2v1.6H24V9.6zm0 3.2v1.6H24v-1.6zm0 3.2v1.6H24V16z"/></svg>
+                </a>
+    
+                <button class="menu-button">
+                    Menu
+                </button>
+    
+                <div class="primary-list">
+                    <ul class="primary-ul">
+                        <li class="item1"><a href="#">Live</a></li>
+                        <li class="item2"><a href="#">Push</a></li>
+                        <li class="item3"><a href="#">Note</a></li>
+                        <li class="item4"><a href="#">Link</a></li>
+                        <li class="item5"><a href="#">Shop</a></li>
+                        <li class="item6"><a href="#">Packs</a></li>
+                        <li class="item7"><a href="#">Help</a></li>
+                        <li class="item8"><a href="#">More +</a></li>
+                        <li class="item9"><a href="#">Try Live for free</a></li>
+                        <li class="item10"><a href="#">Log in or register</a></li>
+                    </ul>
 
-            <button>
-                Menu
-            </button>
+                    <div class="primary-list-extension">
+                        <section class="extension-1">
+                            <h3>More on Ableton.com:</h3>
+                            <ul class="extension-ul">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Ableton for the Classroom</a></li>
+                                <li><a href="#">Ableton for Colleges and Universities</a></li>
+                                <li><a href="#">Certified Training</a></li>
+                                <li><a href="#">About Ableton</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Apprenticeships</a></li>
+                            </ul>
+                        </section>
 
-            <div class="primary-list">
-                <ul>
-                    <li class="item1"><a href="#">Live</a></li>
-                    <li class="item2"><a href="#">Push</a></li>
-                    <li class="item3"><a href="#">Note</a></li>
-                    <li class="item4"><a href="#">Link</a></li>
-                    <li class="item5"><a href="#">Shop</a></li>
-                    <li class="item6"><a href="#">Packs</a></li>
-                    <li class="item7"><a href="#">Help</a></li>
-                    <li class="item8"><a href="#">More +</a></li>
-                    <li class="item9"><a href="#">Try Live for free</a></li>
-                    <li class="item10"><a href="#">Log in or register</a></li>
+                        <section class="extension-2">
+                            <h3>More from Ableton:</h3>
+                            <div class="extension-wrapper">
+                                <div class="extension-slider">
+                                    <ul class="slider-ul">
+                                        <li>
+                                            <a href="#" class="extension-col">
+                                                <div>
+                                                    <h4>Loop</h4>
+                                                    <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="extension-col">
+                                                <div>
+                                                    <h4>Learning Music</h4>
+                                                    <p>Learn the fundamentals of music making right in your browser.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="extension-col">
+                                                <div>
+                                                    <h4>Learning Synths</h4>
+                                                    <p>Get started with synthesis using web-based synth and accompanying lessons.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="extension-col">
+                                                <div>
+                                                    <h4>Making Music</h4>
+                                                    <p>Some tips from 74 Creative Strategies for Electronic Producers</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="secondary">
+                <ul class="secondary-ul">
+                    <li class="about-link"><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Apprenticeships</a></li>
                 </ul>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+
+        <div class="hero-container">
+            <div class="hero-image"></div>
+            <h3>Logo Here</h3>
+        </div>
+    </main>
+    <!-- Navigation -->
+
+    <script defer src="resources/js/dropdown.js"></script>
 </body>
 </html>
