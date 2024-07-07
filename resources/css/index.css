@@ -217,6 +217,22 @@ li {
     color: var(--orange-link-color);
 }
 
+.hero-container {
+    position: relative;
+    /* margin: 0 3vw 3vw 3vw; */
+    margin: 0 5.5vw 5.5vw 5.5vw;
+}
+
+.hero-image {
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: url(./images/ableton-header.avif) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
 @media (max-width: 1024px) {
     .primary-list {
         position: absolute;
