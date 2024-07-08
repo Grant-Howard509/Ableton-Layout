@@ -227,10 +227,21 @@ li {
     position: relative;
     top: 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh; 
     background: url(./images/ableton-header.avif) no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    text-align: center;
+}
+
+.ableton-text-logo {
+    position: absolute;
+    font-size: 150px;
+    color: var(--orange-link-color);
+    font-weight: 500;
+    top: 40%;
+    width: 100%;
+    text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -316,9 +327,9 @@ li {
         padding: 0 .8rem 0 .8rem;
     }
 
-    /* TEMPORARY */
-
-    /* .menu-button {
-
-    } */
+    .ableton-text-logo {
+        position: absolute;
+        font-size: 70px;
+        top: 45%; 
+    }
 }
