@@ -335,7 +335,6 @@ li {
 
 .section-3-top-left {
     position: relative;
-    /* display: inline-block; */
     width: 31.25rem;
     height: 25rem;
     background: url(./images/section-3-top-left.jpg) center center no-repeat;
@@ -357,7 +356,6 @@ li {
 
 .section-3-bottom-left {
     position: relative;
-    /* display: inline-block; */
     width: 31.25rem;
     height: 25rem;
     background: url(./images/section-3-bottom-left.jpg) center center no-repeat;
