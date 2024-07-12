@@ -413,8 +413,7 @@ li {
     background-size: contain;
 }
 
-.purple-box 
-{
+.purple-box {
     position: absolute;
     width: 66.625rem;
     height: 58rem;
@@ -423,9 +422,25 @@ li {
     background-color: var(--section-5-purple);
 }
 
-.delete {
-    width: 100%;
-    margin-bottom: 40rem;
+.section-5-image {
+    display: inline-block;
+    width: 40rem;
+    height: 40rem;
+    vertical-align: middle;
+    background: url(./images/section-6-image.jpg) center center no-repeat;
+    background-size: contain;
+}
+
+.section-5-text {
+    width: 500px;
+    padding: 8.125rem;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #b6ffc0;
+}
+
+.section-5-text h1 {
+    font-size: 1.5rem;
 }
 
 
