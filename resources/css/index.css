@@ -246,10 +246,6 @@ li {
 
 .section-text-container {
     width: 50vw;
-    margin: 0 auto 8vw auto;
-}
-
-.section-2-text-container {
     margin: 0 auto 6vw auto;
 }
 
@@ -370,6 +366,19 @@ li {
     top: 0;
     left: 0;
     background-color: var(--section-3-green);
+}
+
+.section-4-image-container {
+    width: 83.3125rem;
+    height: 100%;
+    margin: 0 auto 130px auto;
+}
+
+.section-4-image {
+    width: 83.3125rem;
+    height: 46.875rem;
+    background: url(./images/section-4-image.avif) center center no-repeat;
+    background-size: contain;
 }
 
 @media (max-width: 64rem) {
@@ -518,6 +527,15 @@ li {
         width: 40.651vw;
         height: 40.651vw;
         margin-left: 8vw;
+    }
+
+    .section-4-image-container {
+        width: 83.375vw;
+    }
+
+    .section-4-image {
+        width: 83.375vw;
+        height: 46.8999vw;
     }
 }
 
