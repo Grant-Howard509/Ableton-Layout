@@ -7,6 +7,7 @@
     --orange-link-color: rgb(255, 118, 77);
     --section-1-yellow: #fbffa7;
     --section-3-green:#b6ffc0;
+    --section-5-purple: #d5b3ff;
 }
 
 * {
@@ -264,12 +265,15 @@ li {
     line-height: 2rem;
 }
 
+.section-text p:nth-of-type(2) {
+    margin-top: 1rem;
+}
+
 .section-1-container {
     position: relative;
     padding: 5.3vw 0 5.3vw 0;
     margin-bottom: 5.5vw;
 }
-
 
 .yellow-box {
     position: absolute;
@@ -346,8 +350,6 @@ li {
     background-size: contain;
     vertical-align: middle;
     margin-left: 8.3rem;
-    white-space: nowrap;
-    z-index: 1;
 }
 
 .section-3-bottom-left {
@@ -380,6 +382,52 @@ li {
     background: url(./images/section-4-image.avif) center center no-repeat;
     background-size: contain;
 }
+
+.section-5-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 8.125rem;
+    padding: 8.125rem 0 8.125rem 0;
+}
+
+.section-5-left {
+    position: relative;    
+    display: inline-block;
+    /* width: 33.3125rem; */
+    width: 33rem;
+    height: 25rem;
+    margin-left: 8rem;
+    vertical-align: middle;
+    background: url(./images/section-5-left.jpg) center center no-repeat;
+    background-size: contain;
+}
+
+.section-5-right {
+    position: relative;
+    display: inline-block;
+    width: 40rem;
+    height: 40rem;
+    margin-left: 16.625rem;
+    vertical-align: middle;
+    background: url(./images/section-5-right.jpg) center center no-repeat;
+    background-size: contain;
+}
+
+.purple-box 
+{
+    position: absolute;
+    width: 66.625rem;
+    height: 58rem;
+    top: 0;
+    left: 16rem;
+    background-color: var(--section-5-purple);
+}
+
+.delete {
+    width: 100%;
+    margin-bottom: 40rem;
+}
+
 
 @media (max-width: 64rem) {
     .primary-list {
@@ -474,6 +522,10 @@ li {
         width: 63vw;
     }
 
+    .section-text p:nth-of-type(2) {
+        margin-top: 0;
+    }
+
     .section-text-container h2 {
         margin-bottom: 1rem;
         line-height: 2rem;
@@ -536,6 +588,32 @@ li {
     .section-4-image {
         width: 83.375vw;
         height: 46.8999vw;
+    }
+
+    .section-5-left {
+        /*  width: 33.33vw; */
+        width: 32vw;
+        height: 24vw;
+        margin-left: 8vw;
+    }
+
+    .section-5-right {
+        /* width: 41.65vw; */
+        width: 40vw;
+        /* height: 41.65vw; */
+        height: 40vw;
+        margin-left: 16vw;
+    }
+
+    .section-5-container {
+        margin-bottom: 8.125vw;
+        padding:8.125vw 0 8.125vw 0 ;
+    }
+
+    .purple-box {
+        width: 66.7vw;
+        height: 58vw;
+        left: 16vw;
     }
 }
 
