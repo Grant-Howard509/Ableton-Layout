@@ -393,9 +393,10 @@ li {
 .section-5-left {
     position: relative;    
     display: inline-block;
-    width: 33.3125rem;
+    /* width: 33.3125rem; */
+    width: 33rem;
     height: 25rem;
-    margin-left: 7.5rem;
+    margin-left: 8rem;
     vertical-align: middle;
     background: url(./images/section-5-left.jpg) center center no-repeat;
     background-size: contain;
@@ -404,9 +405,9 @@ li {
 .section-5-right {
     position: relative;
     display: inline-block;
-    width: 41.625rem;
-    height: 41.625rem;
-    margin-left: 16rem;
+    width: 40rem;
+    height: 40rem;
+    margin-left: 16.625rem;
     vertical-align: middle;
     background: url(./images/section-5-right.jpg) center center no-repeat;
     background-size: contain;
@@ -590,14 +591,17 @@ li {
     }
 
     .section-5-left {
-        width: 33.33vw;
-        height: 25vw;
-        margin-left: 7.5vw;
+        /*  width: 33.33vw; */
+        width: 32vw;
+        height: 24vw;
+        margin-left: 8vw;
     }
 
     .section-5-right {
-        width: 41.65vw;
-        height: 41.65vw;
+        /* width: 41.65vw; */
+        width: 40vw;
+        /* height: 41.65vw; */
+        height: 40vw;
         margin-left: 16vw;
     }
 
@@ -609,6 +613,7 @@ li {
     .purple-box {
         width: 66.7vw;
         height: 58vw;
+        left: 16vw;
     }
 }
 
