@@ -422,8 +422,15 @@ li {
     background-color: var(--section-5-purple);
 }
 
-.section-5-image {
-    display: inline-block;
+/* Section 6 */
+.section-6-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    margin-left: 150px;
+}
+
+.section-6-image {
     width: 40rem;
     height: 40rem;
     vertical-align: middle;
@@ -431,16 +438,23 @@ li {
     background-size: contain;
 }
 
-.section-5-text {
-    width: 500px;
-    padding: 8.125rem;
-    vertical-align: middle;
-    display: inline-block;
+.section-6-text {
+    display: flex;
+    align-items: center;
+    width: 660px;
+    /* padding: 8.125rem; */
+    padding: 9rem;
     background-color: #b6ffc0;
 }
 
-.section-5-text h1 {
+.section-6-text h1 {
     font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.section-6-text a {
+   text-decoration: none;
+   color: var(--blue-link-color);
 }
 
 
