@@ -425,14 +425,17 @@ li {
 /* Section 6 */
 .section-6-container {
     display: flex;
+    align-items: center;
     flex-direction:row;
     flex-wrap: nowrap;
-    margin-left: 150px;
+    /* margin-left: 15vw; */
+    margin-left: 8rem;
+    /* margin-right: 8vw; */
 }
 
 .section-6-image {
-    width: 40rem;
-    height: 40rem;
+    width: 41vw;
+    height: 41vw;
     vertical-align: middle;
     background: url(./images/section-6-image.jpg) center center no-repeat;
     background-size: contain;
@@ -441,14 +444,15 @@ li {
 .section-6-text {
     display: flex;
     align-items: center;
-    width: 660px;
-    /* padding: 8.125rem; */
-    padding: 9rem;
+    width: 41vw;
+    height: 41vw;
+    padding: 8.125rem;
+    /* padding: 9rem; */
     background-color: #b6ffc0;
 }
 
 .section-6-text h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 2.5rem;
 }
 
@@ -457,6 +461,207 @@ li {
    color: var(--blue-link-color);
 }
 
+
+
+/* @media (max-width: 64rem) {
+    .primary-list {
+        position: absolute;
+        padding: 4.375rem 0px 0 1.875rem;
+        margin: 0;
+        top: 0;
+        background-color: var(--blue-link-color);
+        transform: translateY(-100%);
+        transition: transform 0.35s ease-in-out;
+        z-index: 20;
+    }
+
+    .primary-list-active {
+        transform: translateY(0);
+    }
+
+    .primary-list-extension {
+        display: block;
+    }
+
+    .primary-ul {
+        display: inline-block;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .primary-ul li {
+        padding: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .primary-ul a {
+        color: #fff;
+    }
+
+    .primary-ul .item1 {
+        padding: 0;
+    }
+
+    .item8 {
+        display: none;
+    }
+
+    .menu-button {
+        display: inline-block;
+        font-size: 1rem;
+        z-index: 30;
+    }
+
+    .menu-button-active {
+        color: #fff;
+    }
+
+    .menu-button-active::after {
+        content: '';
+        margin-bottom: 2px;
+        border-bottom-color: #fff;
+        border-top-color: transparent;
+    }
+
+    .ableton-logo {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        top: 0;
+        left: .5rem;
+        margin: 0 1.5rem .8rem 1.5rem;
+        z-index: 30;
+    }
+
+    .logo-active {
+        fill: #fff;
+    }
+
+    .secondary-ul {
+        padding: 1.5625rem 0.625rem;
+        font-size: .75rem;
+    }
+
+    .secondary-ul a {
+        padding: 0 .8rem 0 .8rem;
+    }
+
+    .ableton-text-logo {
+        position: absolute;
+        font-size: 4.375rem;
+        top: 45%; 
+    }
+
+    .section-text-container {
+        width: 63vw;
+    }
+
+    .section-text p:nth-of-type(2) {
+        margin-top: 0;
+    }
+
+    .section-text-container h2 {
+        margin-bottom: 1rem;
+        line-height: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .section-text-container p {
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+
+    .video-container {
+        width: 74vw;
+        height: 45vw;
+    }
+
+    .section-6-text h1 {
+        font-size: .5rem;
+    }
+} */
+@media screen and (max-width: 100rem) {
+    .section-1-left {
+        width: 45vw;
+        height: 38vw;
+        margin-left: 4.5vw;
+    }
+
+    .section-1-right {
+        width: 32vw;
+        height: 25vw;
+        margin-left: 4.5vw;
+    }
+
+    .section-3-container  {
+        padding: 8vw;
+    }
+
+    .section-3-left-container {
+        width: 31.25vw;
+    }
+
+    .section-3-top-left {
+        width: 31.271vw;
+        height: 25vw;
+    }
+
+    .section-3-bottom-left {
+        width: 31.271vw;
+        height: 25vw;
+        margin-top: 8vw;
+    }
+
+    .section-3-right {
+        width: 40.651vw;
+        height: 40.651vw;
+        margin-left: 8vw;
+    }
+
+    .section-4-image-container {
+        width: 83.375vw;
+    }
+
+    .section-4-image {
+        width: 83.375vw;
+        height: 46.8999vw;
+    }
+
+    .section-5-left {
+        /*  width: 33.33vw; */
+        width: 32vw;
+        height: 24vw;
+        margin-left: 8vw;
+    }
+
+    .section-5-right {
+        /* width: 41.65vw; */
+        width: 40vw;
+        /* height: 41.65vw; */
+        height: 40vw;
+        margin-left: 16vw;
+    }
+
+    .section-5-container {
+        margin-bottom: 8.125vw;
+        padding:8.125vw 0 8.125vw 0 ;
+    }
+
+    .purple-box {
+        width: 66.7vw;
+        height: 58vw;
+        left: 16vw;
+    }
+
+    .section-6-text {
+        text-size-adjust: 100%;
+        padding: 8.125vw;
+    }
+
+    /* .section-6-text h1 {
+        font-size: .8rem;
+    } */
+}
 
 @media (max-width: 64rem) {
     .primary-list {
@@ -570,79 +775,30 @@ li {
         width: 74vw;
         height: 45vw;
     }
-}
 
-@media screen and (max-width: 100rem) {
-    .section-1-left {
-        width: 45vw;
-        height: 38vw;
-        margin-left: 4.5vw;
-    }
-
-    .section-1-right {
-        width: 32vw;
-        height: 25vw;
-        margin-left: 4.5vw;
-    }
-
-    .section-3-container  {
-        padding: 8vw;
-    }
-
-    .section-3-left-container {
-        width: 31.25vw;
-    }
-
-    .section-3-top-left {
-        width: 31.271vw;
-        height: 25vw;
-    }
-
-    .section-3-bottom-left {
-        width: 31.271vw;
-        height: 25vw;
-        margin-top: 8vw;
-    }
-
-    .section-3-right {
-        width: 40.651vw;
-        height: 40.651vw;
+    .section-6-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
         margin-left: 8vw;
     }
 
-    .section-4-image-container {
-        width: 83.375vw;
+    .section-6-image {
+        width: 79vw;
+        height: 47.5vw;
+        background: url(./images/section-6-image-large.jpg) center center no-repeat;
+        background-size: contain;
+    }
+    
+    .section-6-text {
+        width: 79vw;
+        height: 27vw;
     }
 
-    .section-4-image {
-        width: 83.375vw;
-        height: 46.8999vw;
-    }
-
-    .section-5-left {
-        /*  width: 33.33vw; */
-        width: 32vw;
-        height: 24vw;
-        margin-left: 8vw;
-    }
-
-    .section-5-right {
-        /* width: 41.65vw; */
-        width: 40vw;
-        /* height: 41.65vw; */
-        height: 40vw;
-        margin-left: 16vw;
-    }
-
-    .section-5-container {
-        margin-bottom: 8.125vw;
-        padding:8.125vw 0 8.125vw 0 ;
-    }
-
-    .purple-box {
-        width: 66.7vw;
-        height: 58vw;
-        left: 16vw;
+    .section-6-text h1 {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
 
