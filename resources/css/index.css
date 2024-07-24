@@ -430,6 +430,8 @@ li {
     flex-direction:row;
     flex-wrap: nowrap;
     margin-left: 8rem;
+    padding-bottom: 8rem;
+    border-bottom: 2px solid #eee;
 }
 
 .section-6-image {
@@ -524,7 +526,7 @@ li {
         margin-bottom: 8.125vw;
         padding:8.125vw 0 8.125vw 0 ;
     }
-
+    
     .purple-box {
         width: 66.7vw;
         height: 58vw;
@@ -663,6 +665,7 @@ li {
         flex-direction: column;
         flex-wrap: nowrap;
         margin-left: 8vw;
+        padding-bottom: 8vw;
     }
 
     .section-6-image {
